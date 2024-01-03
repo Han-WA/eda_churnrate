@@ -12,7 +12,7 @@ def app():
 
     st.write("In this EDA, we will use tenure variable for Univariate Analysis and see the relationship with churn attribute")
 
-    dataset = pd.read_csv(r"D:\dashboard\customerchurn.csv")
+    dataset = pd.read_csv("customerchurn.csv")
     dataset.dropna(subset=["TotalCharges"], inplace = True)
     # Central Tendency
     st.subheader("Central Tendency")
