@@ -20,7 +20,7 @@ def app():
     st.table(df)
 
     st.write("The following data contains 7043 records and 21 attributes in total.")
-    dataset = pd.read_csv(r"D:\dashboard\customerchurn.csv")
+    dataset = pd.read_csv("customerchurn.csv")
     st.dataframe(dataset)
 
     st.subheader("Data Cleaning")
