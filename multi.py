@@ -11,7 +11,7 @@ def app():
 
     st.write("Multivariate analysis involves the simultaneous examination and interpretation of three or more variables within a dataset. It aims to provide a comprehensive understanding of how multiple factors interact and influence each other.")
 
-    dataset = pd.read_csv(r"D:\dashboard\customerchurn.csv")
+    dataset = pd.read_csv("customerchurn.csv")
     dataset.dropna(subset=["TotalCharges"], inplace = True)
 
     dataset["Churn"] = dataset["Churn"].map({"Yes": 1, "No": 0})
