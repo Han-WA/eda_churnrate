@@ -1,0 +1,10 @@
+streamlit
+matplotlib
+pandas
+plotly
+numpy
+datetime
+streamlit_option_menu
+prophet
+scikit-learn
+seaborn
